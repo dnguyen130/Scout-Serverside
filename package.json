@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dnguyen130/Scout-Serverside#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^6.2.2",
+    "nodemon": "^2.0.15"
   }
 }
