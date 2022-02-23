@@ -1,11 +1,12 @@
-//connect mongo here
+//nodemon index to try
 const mongoose = require('mongoose');
 
 db = {
-    db_url: "db url go here"
+    db_url: "mongodb+srv://willy:pikachu@scout.sakof.mongodb.net/test"
 }
 
 const ConnectToDb = async() => {
+    console.log("connecting to db");
     await mongoose.connect(db.db_url, (err) =>{
         if(err){
             return console.log(err)
