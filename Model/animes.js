@@ -3,7 +3,18 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const animesSchema = new Schema({
-
+    _id: ObjectId,
+    uid: Number,
+    title: String,
+    synopsis: String,
+    genre: Array,
+    aired: String,
+    episodes: Number,
+    members: Number,
+    popularity: Number,
+    ranked: Number,
+    score: String,
+    img_url: String,
 })
 
 const Animes = mongoose.model('Animes', animesSchema);

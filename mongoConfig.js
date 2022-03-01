@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 db = {
-    db_url: "mongodb+srv://willy:<password>@scout.sakof.mongodb.net/test"
+    db_url: "mongodb+srv://willy:pikachu@scout.sakof.mongodb.net/test"
 }
 
 const ConnectToDb = async() => {
