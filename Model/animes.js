@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const animesSchema = new Schema({
-    _id: ObjectId,
     uid: Number,
     title: String,
     synopsis: String,
