@@ -3,12 +3,14 @@ const app = express();
 const mongoose = require('mongoose');
 const { ConnectToDb } = require('./mongoConfig');
 
-const animeRouter = require('./Routes/anime');
+const AnimeRouter = require('./Routes/animes');
 
+//-----------Import End-----------//
+//configs
 app.use(express.json());
-
 ConnectToDb();
 
-app.use(animeRouter);
+//routes
+app.use(AnimeRouter);
 
 app.listen(4000, () => console.log("server started on localhost 4000"));
