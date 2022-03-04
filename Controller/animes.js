@@ -1,7 +1,8 @@
 const Animes = require('../Model/animes');
 
 const GetAllAnimeByGenre = (req, res) => {
-    Animes.find({genre: ['Comedy']}, (err, animeData) => { //figure out how to find by specified genre, filter?
+    console.log(req.query);
+    Animes.find({genre: JSON.parse(req.query.genre)}, (err, animeData) => { //figure out how to find by specified genre, filter?
         console.log(animeData);
         res.json(animeData);
     });
